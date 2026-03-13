@@ -7,25 +7,28 @@
 
 <head>
   <meta charset="UTF-8">
+
   <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
   <link rel="icon" href="/img/fluid.png">
+  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Laplace">
+  <meta name="author" content="qpengz">
   <meta name="keywords" content="">
   
     <meta name="description" content="概述CMake 是一个跨平台的开源构建工具，使用 CMake 能够方便地管理依赖多个库的目录层次结构并生成 makefile 和使用 GNU make 来编译和连接程序。 入门CMakeLists.txt 内容如下： 123cmake_minimum_required(VERSION 3.18) # 设置 cmake 的最低版本project(learn-cmake)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CMake">
-<meta property="og:url" content="https://laplac2.github.io/tools/cmake/index.html">
+<meta property="og:url" content="https://qpengz.github.io/tools/cmake/index.html">
 <meta property="og:site_name" content="Laplace&#39;s blog">
 <meta property="og:description" content="概述CMake 是一个跨平台的开源构建工具，使用 CMake 能够方便地管理依赖多个库的目录层次结构并生成 makefile 和使用 GNU make 来编译和连接程序。 入门CMakeLists.txt 内容如下： 123cmake_minimum_required(VERSION 3.18) # 设置 cmake 的最低版本project(learn-cmake)">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-12-01T12:00:00.000Z">
-<meta property="article:modified_time" content="2024-04-27T07:43:09.805Z">
-<meta property="article:author" content="Laplace">
+<meta property="article:modified_time" content="2026-03-13T11:33:04.115Z">
+<meta property="article:author" content="qpengz">
 <meta property="article:tag" content="Tool">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -48,7 +51,7 @@
 <!-- 主题依赖的图标库，不要自行修改 -->
 <!-- Do not modify the link that theme dependent icons -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
 
 
 
@@ -69,7 +72,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"laplac2.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"qpengz.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"woyaola":null,"cnzz":null},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,7 +89,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head>
 
 
 <body>
@@ -108,7 +111,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+    <!-- Collapsible content (desktop) -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -204,6 +207,123 @@
   </div>
 </nav>
 
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>首页</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>归档</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>分类</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>标签</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>关于</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/links/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-link-fill"></i>
+                  <span>友链</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>搜索</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="开灯"
+               data-label-dark="关灯">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">关灯</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
   
 
 <div id="banner" class="banner" parallax=true
@@ -236,7 +356,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          6.8k 字
         
       </span>
     
@@ -247,7 +367,7 @@
         
         
         
-          14 分钟
+          57 分钟
         
       </span>
     
@@ -264,6 +384,8 @@
     </div>
   </div>
 </div>
+
+
 
 </div>
 
@@ -312,11 +434,11 @@
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><code class="hljs cmake"><span class="hljs-comment"># 子项目 CMakeLists.txt</span><br><span class="hljs-keyword">cmake_minimum_required</span>(VERSION <span class="hljs-number">3.25</span>)<br><span class="hljs-keyword">project</span>(<span class="hljs-variable">$&#123;PROJECT_NAME&#125;</span>-<span class="hljs-keyword">test</span> VERSION <span class="hljs-number">0.1</span> LANGUAGES C CXX)<br><br><span class="hljs-keyword">set</span>(CMAKE_INCLUDE_CURRENT_DIR <span class="hljs-keyword">ON</span>)<br><br><span class="hljs-keyword">set</span>(CMAKE_C_STANDARD <span class="hljs-number">11</span>)<br><span class="hljs-keyword">set</span>(CMAKE_C_STANDARD_REQUIRED <span class="hljs-keyword">True</span>)<br><span class="hljs-keyword">set</span>(CMAKE_CXX_STANDARD <span class="hljs-number">17</span>)<br><span class="hljs-keyword">set</span>(CMAKE_CXX_STANDARD_REQUIRED <span class="hljs-keyword">True</span>)<br><br><span class="hljs-comment"># 指定 rpath</span><br><span class="hljs-keyword">set</span>(CMAKE_BUILD_WITH_INSTALL_RPATH <span class="hljs-keyword">TRUE</span>)<br><span class="hljs-keyword">if</span>(<span class="hljs-variable">$&#123;CMAKE_BUILD_TYPE&#125;</span> <span class="hljs-keyword">MATCHES</span> <span class="hljs-string">&quot;Debug&quot;</span>)<br>    <span class="hljs-keyword">set</span>(CMAKE_INSTALL_RPATH ..)<br><span class="hljs-keyword">elseif</span>(<span class="hljs-variable">$&#123;CMAKE_BUILD_TYPE&#125;</span> <span class="hljs-keyword">MATCHES</span> <span class="hljs-string">&quot;Release&quot;</span>)<br>    <span class="hljs-keyword">set</span>(CMAKE_INSTALL_RPATH .)<br><span class="hljs-keyword">endif</span>()<br><br><span class="hljs-comment"># 收集源码文件</span><br><span class="hljs-keyword">aux_source_directory</span>(<span class="hljs-variable">$&#123;CMAKE_CURRENT_SOURCE_DIR&#125;</span> TEST_SRCS)<br><br><span class="hljs-comment"># 编译二进制</span><br><span class="hljs-keyword">add_executable</span>(<span class="hljs-variable">$&#123;PROJECT_NAME&#125;</span> <span class="hljs-variable">$&#123;TEST_SRCS&#125;</span>)<br><span class="hljs-keyword">target_include_directories</span>(<span class="hljs-variable">$&#123;PROJECT_NAME&#125;</span> PRIVATE<br>    <span class="hljs-variable">$&#123;CMAKE_CURRENT_BINARY_DIR&#125;</span>/../<span class="hljs-keyword">include</span><br>)<br><span class="hljs-keyword">target_link_directories</span>(<span class="hljs-variable">$&#123;PROJECT_NAME&#125;</span> PRIVATE<br>    <span class="hljs-variable">$&#123;CMAKE_CURRENT_BINARY_DIR&#125;</span>/../<br>)<br><span class="hljs-keyword">target_link_libraries</span>(<span class="hljs-variable">$&#123;PROJECT_NAME&#125;</span><br>    gtest gmock libtools.so<br>)<br></code></pre></td></tr></table></figure>
 
 <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ul>
-<li><code>CMAKE_SOURCE_DIR</code> 是 CMake 内置的变量之一，它表示项目根目录的路径。<br>当使用 CMake 构建项目时，通常会将 CMakeLists.txt 文件放在项目根目录中，此时可以使用 <code>CMAKE_SOURCE_DIR</code> 变量来引用项目根目录中的文件或目录。例如，<code>$&#123;CMAKE_SOURCE_DIR&#125;/include</code> 表示项目根目录中的 <code>include</code> 目录的路径。<br>需要注意的是，<code>CMAKE_SOURCE_DIR</code> 表示的是项目根目录的路径，而不是当前处理的 CMakeLists.txt 文件所在的目录的路径。如果需要引用当前处理的 CMakeLists.txt 文件所在目录的路径，应该使用 <code>CMAKE_CURRENT_LIST_DIR</code> 变量。</li>
-<li><code>CMAKE_CURRENT_SOURCE_DIR</code> 是 CMake 内置的变量之一，它表示当前处理的 CMakeLists.txt 文件所在目录的路径。<br>当使用 CMake 构建项目时，可以使用 <code>CMAKE_CURRENT_SOURCE_DIR</code> 来引用当前处理的 CMakeLists.txt 文件所在目录中的文件或目录。例如，<code>$&#123;CMAKE_CURRENT_SOURCE_DIR&#125;/src</code> 表示当前处理的 CMakeLists.txt 文件所在目录中的 <code>src</code> 目录的路径。<br>需要注意的是，<code>CMAKE_CURRENT_SOURCE_DIR</code> 表示的是当前处理的 CMakeLists.txt 文件所在目录的路径，而不是项目根目录的路径。如果需要引用项目根目录的路径，应该使用 <code>CMAKE_SOURCE_DIR</code> 变量。</li>
-<li><code>CMAKE_CURRENT_LIST_DIR</code>是一个 CMake 内置的变量，它表示当前处理的 CMakeLists.txt 文件所在的目录的路径。该变量的值在 CMake 运行时动态计算，因此它会随着处理的 CMakeLists.txt 文件的不同而发生变化。<br>通过使用 <code>CMAKE_CURRENT_LIST_DIR</code> 变量，可以方便地引用当前处理的 CMakeLists.txt 文件所在目录中的文件或目录。例如，可以使用 <code>$&#123;CMAKE_CURRENT_LIST_DIR&#125;/include</code> 来引用当前处理的 CMakeLists.txt 文件所在目录中的 include 目录。</li>
+<li><code>CMAKE_SOURCE_DIR</code> 是 CMake 内置的变量之一，它表示项目根目录的路径。<br>当使用 CMake 构建项目时，通常会将 CMakeLists.txt 文件放在项目根目录中，此时可以使用 <code>CMAKE_SOURCE_DIR</code> 变量来引用项目根目录中的文件或目录。例如，<code>${CMAKE_SOURCE_DIR}/include</code> 表示项目根目录中的 <code>include</code> 目录的路径。<br>需要注意的是，<code>CMAKE_SOURCE_DIR</code> 表示的是项目根目录的路径，而不是当前处理的 CMakeLists.txt 文件所在的目录的路径。如果需要引用当前处理的 CMakeLists.txt 文件所在目录的路径，应该使用 <code>CMAKE_CURRENT_LIST_DIR</code> 变量。</li>
+<li><code>CMAKE_CURRENT_SOURCE_DIR</code> 是 CMake 内置的变量之一，它表示当前处理的 CMakeLists.txt 文件所在目录的路径。<br>当使用 CMake 构建项目时，可以使用 <code>CMAKE_CURRENT_SOURCE_DIR</code> 来引用当前处理的 CMakeLists.txt 文件所在目录中的文件或目录。例如，<code>${CMAKE_CURRENT_SOURCE_DIR}/src</code> 表示当前处理的 CMakeLists.txt 文件所在目录中的 <code>src</code> 目录的路径。<br>需要注意的是，<code>CMAKE_CURRENT_SOURCE_DIR</code> 表示的是当前处理的 CMakeLists.txt 文件所在目录的路径，而不是项目根目录的路径。如果需要引用项目根目录的路径，应该使用 <code>CMAKE_SOURCE_DIR</code> 变量。</li>
+<li><code>CMAKE_CURRENT_LIST_DIR</code>是一个 CMake 内置的变量，它表示当前处理的 CMakeLists.txt 文件所在的目录的路径。该变量的值在 CMake 运行时动态计算，因此它会随着处理的 CMakeLists.txt 文件的不同而发生变化。<br>通过使用 <code>CMAKE_CURRENT_LIST_DIR</code> 变量，可以方便地引用当前处理的 CMakeLists.txt 文件所在目录中的文件或目录。例如，可以使用 <code>${CMAKE_CURRENT_LIST_DIR}/include</code> 来引用当前处理的 CMakeLists.txt 文件所在目录中的 include 目录。</li>
 <li><code>PROJECT_ROOT</code> 和 <code>CMAKE_SOURCE_DIR</code> 的区别<br><code>PROJECT_ROOT</code> 不是 CMake 内置的变量，它通常是由项目的开发者在 CMakeLists.txt 文件中定义的。与此不同，<code>CMAKE_SOURCE_DIR</code> 是 CMake 内置的变量，它指向项目源代码根目录的路径。<br>因此，<code>PROJECT_ROOT</code> 和 <code>CMAKE_SOURCE_DIR</code> 的区别在于其定义的位置和目的。<code>PROJECT_ROOT</code> 是由项目开发者定义的变量，可以用于自定义项目的根目录路径，而 <code>CMAKE_SOURCE_DIR</code> 是 CMake 内置的变量，指向项目源代码根目录的路径。</li>
-<li><code>CMAKE_CURRENT_LIST_DIR</code> 和 <code>CMAKE_CURRENT_SOURCE_DIR</code> 的区别<br><code>CMAKE_CURRENT_LIST_DIR</code> 和 <code>CMAKE_CURRENT_SOURCE_DIR</code> 都是 CMake 内置的变量，它们的作用是表示当前处理的 CMakeLists.txt 文件所在的目录的路径。<br>区别在于，<code>CMAKE_CURRENT_LIST_DIR</code> 表示的是当前处理的 CMakeLists.txt 文件所在的目录的路径，而 <code>CMAKE_CURRENT_SOURCE_DIR</code> 表示的是当前处理的源文件所在的目录的路径。<br>如果 CMakeLists.txt 文件包含在一个子目录中，则 <code>CMAKE_CURRENT_LIST_DIR</code> 和 <code>CMAKE_CURRENT_SOURCE_DIR</code> 的值可能不同，因为它们表示的是不同的目录。例如，如果 CMakeLists.txt 文件位于项目根目录的 <code>src</code> 子目录中，而源文件位于 <code>src</code> 子目录的 <code>lib</code> 子目录中，则 <code>CMAKE_CURRENT_LIST_DIR</code> 的值为 <code>$&#123;PROJECT_SOURCE_DIR&#125;/src</code>，而 <code>CMAKE_CURRENT_SOURCE_DIR</code> 的值为 <code>$&#123;PROJECT_SOURCE_DIR&#125;/src/lib</code>。<br>因此，需要根据具体情况选择使用 <code>CMAKE_CURRENT_LIST_DIR</code> 还是 <code>CMAKE_CURRENT_SOURCE_DIR</code>。如果需要引用当前处理的 CMakeLists.txt 文件所在目录中的文件或目录，应该使用 <code>CMAKE_CURRENT_LIST_DIR</code>；如果需要引用当前源文件所在目录中的文件或目录，应该使用 <code>CMAKE_CURRENT_SOURCE_DIR</code>。</li>
+<li><code>CMAKE_CURRENT_LIST_DIR</code> 和 <code>CMAKE_CURRENT_SOURCE_DIR</code> 的区别<br><code>CMAKE_CURRENT_LIST_DIR</code> 和 <code>CMAKE_CURRENT_SOURCE_DIR</code> 都是 CMake 内置的变量，它们的作用是表示当前处理的 CMakeLists.txt 文件所在的目录的路径。<br>区别在于，<code>CMAKE_CURRENT_LIST_DIR</code> 表示的是当前处理的 CMakeLists.txt 文件所在的目录的路径，而 <code>CMAKE_CURRENT_SOURCE_DIR</code> 表示的是当前处理的源文件所在的目录的路径。<br>如果 CMakeLists.txt 文件包含在一个子目录中，则 <code>CMAKE_CURRENT_LIST_DIR</code> 和 <code>CMAKE_CURRENT_SOURCE_DIR</code> 的值可能不同，因为它们表示的是不同的目录。例如，如果 CMakeLists.txt 文件位于项目根目录的 <code>src</code> 子目录中，而源文件位于 <code>src</code> 子目录的 <code>lib</code> 子目录中，则 <code>CMAKE_CURRENT_LIST_DIR</code> 的值为 <code>${PROJECT_SOURCE_DIR}/src</code>，而 <code>CMAKE_CURRENT_SOURCE_DIR</code> 的值为 <code>${PROJECT_SOURCE_DIR}/src/lib</code>。<br>因此，需要根据具体情况选择使用 <code>CMAKE_CURRENT_LIST_DIR</code> 还是 <code>CMAKE_CURRENT_SOURCE_DIR</code>。如果需要引用当前处理的 CMakeLists.txt 文件所在目录中的文件或目录，应该使用 <code>CMAKE_CURRENT_LIST_DIR</code>；如果需要引用当前源文件所在目录中的文件或目录，应该使用 <code>CMAKE_CURRENT_SOURCE_DIR</code>。</li>
 </ul>
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;cmake.configureEnvironment&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-attr">&quot;CMAKE_PREFIX_PATH&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;C:/Qt/6.6.2/msvc2019_64&quot;</span><br>  <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;cmake.debugConfig&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-attr">&quot;args&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><br>  <span class="hljs-punctuation">&#125;</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
 
@@ -378,13 +500,13 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>CMake</div>
-      <div>https://laplac2.github.io/tools/cmake/</div>
+      <div>https://qpengz.github.io/tools/cmake/</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>Laplace</div>
+          <div>qpengz</div>
         </div>
       
       
@@ -403,7 +525,7 @@
               
                 <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
                   <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-by"></i>
+                    <i class="iconfont icon-cc-by"></i>
                   </span>
                 </a>
               
@@ -547,7 +669,6 @@
   
   
   
-  
 </div>
 
   </footer>
@@ -605,7 +726,63 @@
     var boardCtn = jQuery('#board-ctn');
     var boardTop = boardCtn.offset().top;
 
-    window.tocbot.init(Object.assign({
+    function isExpandAllEnabled() {
+      return CONFIG.toc && CONFIG.toc.expand_all === true;
+    }
+    function expandAllToc() {
+      if (!isExpandAllEnabled()) { return; }
+      jQuery('#toc-body .tocbot-is-collapsed').removeClass('tocbot-is-collapsed');
+    }
+    function updateTocToggle($li, $childList) {
+      var $toggle = $li.children('.toc-toggle');
+      if ($toggle.length === 0) { return; }
+      var collapsed = $childList.hasClass('tocbot-is-collapsed');
+      $toggle
+        .toggleClass('toc-toggle-collapsed', collapsed)
+        .toggleClass('toc-toggle-expanded', !collapsed);
+    }
+    function bindTocToggle() {
+      if (!isExpandAllEnabled()) { return; }
+      jQuery('#toc-body .toc-list-item').each(function() {
+        var $li = jQuery(this);
+        var $childList = $li.children('ol');
+        if ($childList.length === 0) {
+          if ($li.children('.toc-toggle').length === 0) {
+            $li.prepend('<span class="toc-toggle toc-toggle-placeholder" aria-hidden="true">›</span>');
+          }
+          return;
+        }
+
+        if ($li.children('.toc-toggle').length === 0) {
+          $li.prepend('<span class="toc-toggle toc-toggle-expanded" aria-hidden="true">›</span>');
+        }
+        updateTocToggle($li, $childList);
+      });
+      jQuery('#toc-body').off('click.tocToggle').on('click.tocToggle', '.toc-toggle', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $li = jQuery(this).parent('.toc-list-item');
+        var $childList = $li.children('ol');
+        if ($childList.length === 0) { return; }
+        $childList.toggleClass('tocbot-is-collapsed');
+        updateTocToggle($li, $childList);
+      });
+      if (!window.__tocToggleObserver) {
+        window.__tocToggleObserver = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type !== 'attributes' || mutation.attributeName !== 'class') { return; }
+            var $list = jQuery(mutation.target);
+            var $li = $list.parent('.toc-list-item');
+            if ($li.length === 0) { return; }
+            updateTocToggle($li, $list);
+          });
+        });
+        jQuery('#toc-body ol').each(function() {
+          window.__tocToggleObserver.observe(this, { attributes: true });
+        });
+      }
+    }
+    var tocConfig = Object.assign({
       tocSelector     : '#toc-body',
       contentSelector : '.markdown-body',
       linkClass       : 'tocbot-link',
@@ -616,10 +793,16 @@
       scrollSmooth    : true,
       includeTitleTags: true,
       headingsOffset  : -boardTop,
-    }, CONFIG.toc));
+    }, CONFIG.toc);
+    if (isExpandAllEnabled()) {
+      tocConfig.collapseDepth = 6;
+    }
+    window.tocbot.init(tocConfig);
     if (toc.find('.toc-list-item').length > 0) {
       toc.css('visibility', 'visible');
     }
+    expandAllToc();
+    bindTocToggle();
 
     Fluid.events.registerRefreshCallback(function() {
       if ('tocbot' in window) {
@@ -631,6 +814,8 @@
         if (toc.find('.toc-list-item').length > 0) {
           toc.css('visibility', 'visible');
         }
+        expandAllToc();
+        bindTocToggle();
       }
     });
   });
